@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wajid Dev – Web Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       CURSOR
+  ============================================================ -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ============================================================
+       PRELOADER
+  ============================================================ -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <span class="pre-logo">W</span>
+      <div class="pre-bar"><div class="pre-fill" id="preFill"></div></div>
+      <span class="pre-text">Loading...</span>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       FIXED SOCIAL ICONS (LEFT SIDE)
+  ============================================================ -->
+  <div class="social-sidebar">
+    <a href="#" class="social-link" aria-label="Facebook" data-tooltip="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="#" class="social-link" aria-label="Instagram" data-tooltip="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="#" class="social-link" aria-label="LinkedIn" data-tooltip="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+    <div class="social-line"></div>
+  </div>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <!-- Logo -->
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Wajid Dev<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Menu -->
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home"      class="nav-link active">Home</a></li>
+        <li><a href="#about"     class="nav-link">About</a></li>
+        <li><a href="#services"  class="nav-link">Services</a></li>
+        <li><a href="#projects"  class="nav-link">Projects</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#contact"   class="nav-link">Contact</a></li>
+        <li><a href="#contact" class="nav-btn">Hire Me</a></li>
+      </ul>
+
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section class="hero" id="home">
+    <!-- Animated background orbs -->
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-lines"></div>
+    </div>
+
+    <div class="hero-container">
+      <!-- Text Side -->
+      <div class="hero-content" data-aos="fade-right">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for Work
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Wajid</span><br />
+          <span class="title-line2">Web Developer</span>
+        </h1>
+
+        <p class="hero-sub">
+          I craft <span class="typed-text" id="typedText"></span>
+          <span class="typed-cursor">|</span>
+        </p>
+
+        <p class="hero-desc">
+          Transforming ideas into stunning digital experiences with clean code,
+          thoughtful design and pixel-perfect precision.
+        </p>
+
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-primary">
+            <span>Hire Me</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#projects" class="btn btn-outline">
+            <span>View Work</span>
+            <i class="fas fa-eye"></i>
+          </a>
+        </div>
+
+        <!-- Quick stats -->
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num" data-target="3">0</span><span>+</span>
+            <span class="stat-label">Years Exp.</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-target="50">0</span><span>+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-target="30">0</span><span>+</span>
+            <span class="stat-label">Clients</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Side -->
+      <div class="hero-image-wrap" data-aos="fade-left">
+        <div class="image-ring ring-1"></div>
+        <div class="image-ring ring-2"></div>
+        <div class="image-ring ring-3"></div>
+        <div class="hero-img-container">
+          <div class="hero-img-placeholder">
+            <i class="fas fa-user"></i>
+            <span>Your Photo</span>
+          </div>
+        </div>
+        <!-- Floating badges -->
+        <div class="float-badge badge-top">
+          <i class="fas fa-code"></i> Clean Code
+        </div>
+        <div class="float-badge badge-bottom">
+          <i class="fas fa-star"></i> 5.0 Rating
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT SECTION
+  ============================================================ -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">// about me</span>
+        <h2 class="section-title">Who I <span class="gradient-text">Am</span></h2>
+        <p class="section-subtitle">Passionate developer building tomorrow's web</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Left: Image -->
+        <div class="about-image-wrap" data-aos="fade-right">
+          <div class="about-img-frame">
+            <div class="about-img-placeholder">
+              <i class="fas fa-user-tie"></i>
+            </div>
+            <div class="about-img-decoration"></div>
+          </div>
+          <!-- Experience card -->
+          <div class="exp-card glass">
+            <span class="exp-num">3+</span>
+            <span class="exp-label">Years of<br/>Experience</span>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="about-content" data-aos="fade-left">
+          <h3 class="about-name">Wajid <span class="gradient-text">—</span> Web Developer</h3>
+          <p class="about-text">
+            I'm a passionate web developer with a strong focus on creating beautiful, 
+            functional, and user-friendly digital experiences. I specialize in modern 
+            frontend technologies and enjoy turning complex problems into elegant solutions.
+          </p>
+          <p class="about-text">
+            My journey in web development has equipped me with skills in both design 
+            and development, allowing me to deliver end-to-end solutions that exceed client expectations.
+          </p>
+
+          <!-- Personal Info -->
+          <div class="about-info">
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <span>wajid@example.com</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Karachi, Pakistan</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-briefcase"></i>
+              <span>Freelance & Full-time</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-graduation-cap"></i>
+              <span>BS Computer Science</span>
+            </div>
+          </div>
+
+          <a href="#" class="btn btn-primary" style="margin-top:2rem">
+            <span>Download CV</span>
+            <i class="fas fa-download"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="skills-section" data-aos="fade-up">
+        <h3 class="skills-title">Technical <span class="gradient-text">Skills</span></h3>
+        <div class="skills-grid">
+          <div class="skill-card glass">
+            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+            <div class="skill-info">
+              <span class="skill-name">HTML5</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+              <span class="skill-pct">95%</span>
+            </div>
+          </div>
+          <div class="skill-card glass">
+            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+            <div class="skill-info">
+              <span class="skill-name">CSS3 / SCSS</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+              <span class="skill-pct">90%</span>
+            </div>
+          </div>
+          <div class="skill-card glass">
+            <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+            <div class="skill-info">
+              <span class="skill-name">JavaScript</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+              <span class="skill-pct">85%</span>
+            </div>
+          </div>
+          <div class="skill-card glass">
+            <div class="skill-icon"><i class="fab fa-react"></i></div>
+            <div class="skill-info">
+              <span class="skill-name">React JS</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+              <span class="skill-pct">80%</span>
+            </div>
+          </div>
+          <div class="skill-card glass">
+            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+            <div class="skill-info">
+              <span class="skill-name">Node.js</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+              <span class="skill-pct">70%</span>
+            </div>
+          </div>
+          <div class="skill-card glass">
+            <div class="skill-icon"><i class="fas fa-database"></i></div>
+            <div class="skill-info">
+              <span class="skill-name">MongoDB / SQL</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+              <span class="skill-pct">75%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education Timeline -->
+      <div class="education-section" data-aos="fade-up">
+        <h3 class="skills-title">Education &amp; <span class="gradient-text">Experience</span></h3>
+        <div class="timeline">
+          <div class="timeline-item" data-aos="fade-right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass">
+              <span class="timeline-year">2021 – 2025</span>
+              <h4>BS Computer Science</h4>
+              <p>University of Karachi — Focused on software engineering, algorithms, and modern web technologies.</p>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos="fade-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass">
+              <span class="timeline-year">2023 – Present</span>
+              <h4>Freelance Web Developer</h4>
+              <p>Building custom websites and web apps for clients worldwide. 50+ projects delivered.</p>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos="fade-right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass">
+              <span class="timeline-year">2022 – 2023</span>
+              <h4>Frontend Intern</h4>
+              <p>Tech Solutions PK — Worked on React applications, responsive UI design, and performance optimization.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SERVICES SECTION
+  ============================================================ -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">// what I do</span>
+        <h2 class="section-title">My <span class="gradient-text">Services</span></h2>
+        <p class="section-subtitle">Premium solutions tailored to your needs</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card glass" data-aos="fade-up" data-aos-delay="0">
+          <div class="service-icon">
+            <i class="fas fa-paint-brush"></i>
+            <div class="service-icon-bg"></div>
+          </div>
+          <h3>Web Design</h3>
+          <p>Pixel-perfect, responsive designs that captivate users and elevate brands. UI/UX focused with modern aesthetics.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> UI/UX Design</li>
+            <li><i class="fas fa-check"></i> Prototyping</li>
+            <li><i class="fas fa-check"></i> Mobile-First</li>
+          </ul>
+          <div class="service-num">01</div>
+        </div>
+
+        <div class="service-card glass" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-icon">
+            <i class="fas fa-laptop-code"></i>
+            <div class="service-icon-bg"></div>
+          </div>
+          <h3>Frontend Development</h3>
+          <p>Crafting blazing-fast, interactive web experiences using modern frameworks and best practices.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> React / JS</li>
+            <li><i class="fas fa-check"></i> CSS Animations</li>
+            <li><i class="fas fa-check"></i> Performance</li>
+          </ul>
+          <div class="service-num">02</div>
+        </div>
+
+        <div class="service-card glass" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-icon">
+            <i class="fas fa-server"></i>
+            <div class="service-icon-bg"></div>
+          </div>
+          <h3>Backend Development</h3>
+          <p>Robust, scalable server-side solutions with clean APIs, databases, and authentication systems.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Node.js / PHP</li>
+            <li><i class="fas fa-check"></i> REST APIs</li>
+            <li><i class="fas fa-check"></i> MongoDB / MySQL</li>
+          </ul>
+          <div class="service-num">03</div>
+        </div>
+
+        <div class="service-card glass" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-icon">
+            <i class="fas fa-mobile-alt"></i>
+            <div class="service-icon-bg"></div>
+          </div>
+          <h3>Responsive Design</h3>
+          <p>Every pixel matters on every device. Flawless experiences across mobile, tablet, and desktop.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Cross-Browser</li>
+            <li><i class="fas fa-check"></i> Fluid Layouts</li>
+            <li><i class="fas fa-check"></i> Accessibility</li>
+          </ul>
+          <div class="service-num">04</div>
+        </div>
+
+        <div class="service-card glass" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <div class="service-icon-bg"></div>
+          </div>
+          <h3>E-Commerce</h3>
+          <p>Custom online stores with seamless checkout, inventory management, and payment integrations.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> WooCommerce</li>
+            <li><i class="fas fa-check"></i> Payment Gateway</li>
+            <li><i class="fas fa-check"></i> Product Mgmt</li>
+          </ul>
+          <div class="service-num">05</div>
+        </div>
+
+        <div class="service-card glass" data-aos="fade-up" data-aos-delay="500">
+          <div class="service-icon">
+            <i class="fas fa-rocket"></i>
+            <div class="service-icon-bg"></div>
+          </div>
+          <h3>SEO &amp; Optimization</h3>
+          <p>Speed, performance, and visibility — optimized sites that rank higher and load faster.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Core Web Vitals</li>
+            <li><i class="fas fa-check"></i> On-Page SEO</li>
+            <li><i class="fas fa-check"></i> Lighthouse 90+</li>
+          </ul>
+          <div class="service-num">06</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS SECTION
+  ============================================================ -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">// recent work</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">Hand-picked projects that showcase my capabilities</p>
+      </div>
+
+      <!-- Swiper -->
+      <div class="swiper projectSwiper" data-aos="fade-up">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="project-card glass">
+              <div class="project-img-wrap">
+                <div class="project-img-placeholder">
+                  <i class="fas fa-store"></i>
+                </div>
+                <div class="project-overlay">
+                  <a href="#" class="project-link" aria-label="View Live"><i class="fas fa-external-link-alt"></i></a>
+                  <a href="#" class="project-link" aria-label="View Code"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-tags">
+                  <span>React</span><span>Node.js</span><span>MongoDB</span>
+                </div>
+                <h3>E-Commerce Platform</h3>
+                <p>Full-stack online store with real-time inventory, Stripe payments, and admin dashboard.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="project-card glass">
+              <div class="project-img-wrap">
+                <div class="project-img-placeholder">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="project-overlay">
+                  <a href="#" class="project-link" aria-label="View Live"><i class="fas fa-external-link-alt"></i></a>
+                  <a href="#" class="project-link" aria-label="View Code"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-tags">
+                  <span>React</span><span>Chart.js</span><span>API</span>
+                </div>
+                <h3>Analytics Dashboard</h3>
+                <p>Real-time data visualization dashboard with dynamic charts and KPI tracking.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="project-card glass">
+              <div class="project-img-wrap">
+                <div class="project-img-placeholder">
+                  <i class="fas fa-comments"></i>
+                </div>
+                <div class="project-overlay">
+                  <a href="#" class="project-link" aria-label="View Live"><i class="fas fa-external-link-alt"></i></a>
+                  <a href="#" class="project-link" aria-label="View Code"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-tags">
+                  <span>Socket.io</span><span>Node.js</span><span>CSS</span>
+                </div>
+                <h3>Real-time Chat App</h3>
+                <p>Instant messaging platform with rooms, file sharing, and end-to-end encryption.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="project-card glass">
+              <div class="project-img-wrap">
+                <div class="project-img-placeholder">
+                  <i class="fas fa-blog"></i>
+                </div>
+                <div class="project-overlay">
+                  <a href="#" class="project-link" aria-label="View Live"><i class="fas fa-external-link-alt"></i></a>
+                  <a href="#" class="project-link" aria-label="View Code"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-tags">
+                  <span>WordPress</span><span>PHP</span><span>MySQL</span>
+                </div>
+                <h3>Blog CMS Platform</h3>
+                <p>Custom WordPress theme with advanced SEO, CDN integration, and 99/100 PageSpeed.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="project-card glass">
+              <div class="project-img-wrap">
+                <div class="project-img-placeholder">
+                  <i class="fas fa-calendar-alt"></i>
+                </div>
+                <div class="project-overlay">
+                  <a href="#" class="project-link" aria-label="View Live"><i class="fas fa-external-link-alt"></i></a>
+                  <a href="#" class="project-link" aria-label="View Code"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-tags">
+                  <span>JavaScript</span><span>REST API</span><span>SCSS</span>
+                </div>
+                <h3>Booking System</h3>
+                <p>Appointment management app with calendar UI, reminders, and Zoom integration.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PORTFOLIO / GALLERY SECTION
+  ============================================================ -->
+  <section class="portfolio section" id="portfolio">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">// portfolio</span>
+        <h2 class="section-title">My <span class="gradient-text">Gallery</span></h2>
+        <p class="section-subtitle">A curated selection of designs and builds</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="filter-btns" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Design</button>
+        <button class="filter-btn" data-filter="app">Web Apps</button>
+        <button class="filter-btn" data-filter="ui">UI / UX</button>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="portfolio-grid" id="portfolioGrid">
+
+        <div class="port-item" data-category="web" data-aos="zoom-in" data-aos-delay="0">
+          <div class="port-img-placeholder"><i class="fas fa-globe"></i></div>
+          <div class="port-overlay">
+            <h4>Business Website</h4>
+            <span>Web Design</span>
+          </div>
+        </div>
+
+        <div class="port-item" data-category="app" data-aos="zoom-in" data-aos-delay="80">
+          <div class="port-img-placeholder"><i class="fas fa-tasks"></i></div>
+          <div class="port-overlay">
+            <h4>Task Manager</h4>
+            <span>Web App</span>
+          </div>
+        </div>
+
+        <div class="port-item" data-category="ui" data-aos="zoom-in" data-aos-delay="160">
+          <div class="port-img-placeholder"><i class="fas fa-palette"></i></div>
+          <div class="port-overlay">
+            <h4>Design System</h4>
+            <span>UI / UX</span>
+          </div>
+        </div>
+
+        <div class="port-item" data-category="web" data-aos="zoom-in" data-aos-delay="0">
+          <div class="port-img-placeholder"><i class="fas fa-utensils"></i></div>
+          <div class="port-overlay">
+            <h4>Restaurant Site</h4>
+            <span>Web Design</span>
+          </div>
+        </div>
+
+        <div class="port-item" data-category="app" data-aos="zoom-in" data-aos-delay="80">
+          <div class="port-img-placeholder"><i class="fas fa-heartbeat"></i></div>
+          <div class="port-overlay">
+            <h4>Health Tracker</h4>
+            <span>Web App</span>
+          </div>
+        </div>
+
+        <div class="port-item" data-category="ui" data-aos="zoom-in" data-aos-delay="160">
+          <div class="port-img-placeholder"><i class="fas fa-mobile"></i></div>
+          <div class="port-overlay">
+            <h4>Mobile App UI</h4>
+            <span>UI / UX</span>
+          </div>
+        </div>
+
+        <div class="port-item" data-category="web" data-aos="zoom-in" data-aos-delay="0">
+          <div class="port-img-placeholder"><i class="fas fa-hotel"></i></div>
+          <div class="port-overlay">
+            <h4>Hotel Booking</h4>
+            <span>Web Design</span>
+          </div>
+        </div>
+
+        <div class="port-item" data-category="app" data-aos="zoom-in" data-aos-delay="80">
+          <div class="port-img-placeholder"><i class="fas fa-graduation-cap"></i></div>
+          <div class="port-overlay">
+            <h4>LMS Platform</h4>
+            <span>Web App</span>
+          </div>
+        </div>
+
+        <div class="port-item" data-category="ui" data-aos="zoom-in" data-aos-delay="160">
+          <div class="port-img-placeholder"><i class="fas fa-music"></i></div>
+          <div class="port-overlay">
+            <h4>Music App UI</h4>
+            <span>UI / UX</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TESTIMONIALS (Bonus Swiper)
+  ============================================================ -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">// client love</span>
+        <h2 class="section-title">What They <span class="gradient-text">Say</span></h2>
+      </div>
+
+      <div class="swiper testimonialsSwiper" data-aos="fade-up">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="testi-card glass">
+              <div class="testi-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p>"Wajid delivered an exceptional website that exceeded all our expectations. His attention to detail and code quality is outstanding!"</p>
+              <div class="testi-author">
+                <div class="testi-avatar"><i class="fas fa-user"></i></div>
+                <div>
+                  <strong>Ahmad Raza</strong>
+                  <span>CEO, TechStart PK</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testi-card glass">
+              <div class="testi-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p>"Professional, fast, and incredibly talented. Our e-commerce sales doubled after the redesign. Highly recommended!"</p>
+              <div class="testi-author">
+                <div class="testi-avatar"><i class="fas fa-user"></i></div>
+                <div>
+                  <strong>Sarah Khan</strong>
+                  <span>Owner, Style Boutique</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testi-card glass">
+              <div class="testi-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p>"The dashboard he built transformed how we track metrics. Clean, fast, and exactly what we envisioned. Five stars!"</p>
+              <div class="testi-author">
+                <div class="testi-avatar"><i class="fas fa-user"></i></div>
+                <div>
+                  <strong>Omar Siddiqui</strong>
+                  <span>CTO, DataFlow Inc.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">// get in touch</span>
+        <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+        <p class="section-subtitle">Let's build something amazing together</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Info Cards -->
+        <div class="contact-info" data-aos="fade-right">
+          <div class="contact-card glass">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p>wajid@example.com</p>
+            </div>
+          </div>
+          <div class="contact-card glass">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <p>+92 300 0000000</p>
+            </div>
+          </div>
+          <div class="contact-card glass">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Location</h4>
+              <p>Karachi, Pakistan</p>
+            </div>
+          </div>
+          <div class="contact-card glass">
+            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h4>Availability</h4>
+              <p>Mon – Sat, 9AM – 9PM</p>
+            </div>
+          </div>
+
+          <!-- Social links -->
+          <div class="contact-socials">
+            <a href="#" class="social-btn"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form-wrap" data-aos="fade-left">
+          <form class="contact-form glass" id="contactForm" novalidate>
+            <h3>Send a <span class="gradient-text">Message</span></h3>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <div class="input-wrap">
+                  <i class="fas fa-user"></i>
+                  <input type="text" id="name" name="name" placeholder="John Doe" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <div class="input-wrap">
+                  <i class="fas fa-envelope"></i>
+                  <input type="email" id="email" name="email" placeholder="john@example.com" required />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <div class="input-wrap">
+                <i class="fas fa-tag"></i>
+                <input type="text" id="subject" name="subject" placeholder="Project Inquiry" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <div class="input-wrap textarea-wrap">
+                <i class="fas fa-comment-alt"></i>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-check-circle"></i>
+              Message sent! I'll reply soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#home" class="footer-logo">
+          <span class="logo-bracket">&lt;</span>Wajid Dev<span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-text">Crafted with <i class="fas fa-heart" style="color:var(--accent)"></i> by Wajid &copy; 2025</p>
+        <a href="#home" class="back-top" aria-label="Back to top">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Main script -->
+  <script src="script.js"></script>
+</body>
+</html>
