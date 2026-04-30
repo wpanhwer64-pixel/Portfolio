@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Wajid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-transition">
+
+  <div class="preloader"><div class="preloader-spinner"></div></div>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">W.</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <div class="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>My Portfolio</h1>
+      <p>A curated collection of my finest work.</p>
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span>Portfolio</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <!-- Filter Buttons -->
+      <div class="filter-buttons reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="websites">Websites</button>
+        <button class="filter-btn" data-filter="webapps">Web Apps</button>
+        <button class="filter-btn" data-filter="experimental">Experimental</button>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="portfolio-grid">
+
+        <div class="portfolio-item reveal" data-category="websites">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Project 1" />
+          <div class="portfolio-overlay">
+            <h3>Luxury Brand Website</h3>
+            <span>Websites</span>
+            <a href="#" class="view-btn"><i class="fas fa-arrow-right"></i> View Details</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item reveal" data-category="webapps">
+          <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop" alt="Project 2" />
+          <div class="portfolio-overlay">
+            <h3>Task Management App</h3>
+            <span>Web Apps</span>
+            <a href="#" class="view-btn"><i class="fas fa-arrow-right"></i> View Details</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item reveal" data-category="websites">
+          <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop" alt="Project 3" />
+          <div class="portfolio-overlay">
+            <h3>E-Commerce Platform</h3>
+            <span>Websites</span>
+            <a href="#" class="view-btn"><i class="fas fa-arrow-right"></i> View Details</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item reveal" data-category="experimental">
+          <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&h=400&fit=crop" alt="Project 4" />
+          <div class="portfolio-overlay">
+            <h3>3D Interactive Experience</h3>
+            <span>Experimental</span>
+            <a href="#" class="view-btn"><i class="fas fa-arrow-right"></i> View Details</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item reveal" data-category="webapps">
+          <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=600&h=400&fit=crop" alt="Project 5" />
+          <div class="portfolio-overlay">
+            <h3>Analytics Dashboard</h3>
+            <span>Web Apps</span>
+            <a href="#" class="view-btn"><i class="fas fa-arrow-right"></i> View Details</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item reveal" data-category="experimental">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=400&fit=crop" alt="Project 6" />
+          <div class="portfolio-overlay">
+            <h3>AI-Powered Art Generator</h3>
+            <span>Experimental</span>
+            <a href="#" class="view-btn"><i class="fas fa-arrow-right"></i> View Details</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">W.</a>
+          <p>Crafting premium digital experiences with code and creativity.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Connect</h4>
+          <div class="footer-links">
+            <a href="#"><i class="fab fa-github"></i> GitHub</a>
+            <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2025 Wajid. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></button>
+  <script src="js/script.js"></script>
+</body>
+</html>
